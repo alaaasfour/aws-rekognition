@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EECS4070 Directed Studies - AWS Rekognition Project</title>
+    <meta name="description" content="Coursera - AWS Rekognition Guide Project">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1>EECS4070 Directed Studies - AWS Rekognition Project</h1>
+      <h2>Facial and Objects Detection with AWS Rekogniton</h2>
+    </header>
+
+    <main>
+      <form action="/detectLabels" method="post" >
+          <p><b>Detect Label</b></p>
+          <div>Amazon S3 Bucket Name</div>
+          <input type="text" id="bucketname" name="bucketname"/>
+          <div>Image Name</div>
+          <input type="text" id="objectname" name="objectname"/>
+          <br>
+          <button type="submit">Detect Labels</button>
+      </form>
+  
+
+      <form action="/imageModeration" method="post" >
+          <p><b>Image Moderation</b></p>  
+          <div>Amazon S3 Bucket Name</div>
+          <input type="text" id="bucketname" name="bucketname"/>
+          <div>Image Name</div>
+          <input type="text" id="objectname" name="objectname"/>
+          <br>
+          <button type="submit">Image Moderation</button>
+      </form>
+
+
+      <form action="/facialAnalysis" method="post" >
+          <p><b>Facial Analysis</b></p>  
+          <div>Amazon S3 Bucket Name</div>
+          <input type="text" id="bucketname" name="bucketname"/>
+          <div>Image Name</div>
+          <input type="text" id="objectname" name="objectname"/>
+          <br>
+          <button type="submit">Facial Analysis</button>
+      </form>
+
+
+      <form action="/celebrity" method="post" >
+          <p><b>Celebrity Recognition</b></p>  
+          <div>Amazon S3 Bucket Name</div>
+          <input type="text" id="bucketname" name="bucketname"/>
+          <div>Image Name</div>
+          <input type="text" id="objectname" name="objectname"/>
+          <br>
+          <button type="submit">Celebrity Recognition</button>
+      </form>
+
+
+
+      <form action="/textImage" method="post" >
+          <p><b>Text In Image</b></p>  
+          <div>Amazon S3 Bucket Name</div>
+          <input type="text" id="bucketname" name="bucketname"/>
+          <div>Image Name</div>
+          <input type="text" id="objectname" name="objectname"/>
+          <br>
+          <button type="submit">Text In Image</button>
+      </form>
+
+
+
+      <form action="/faceCompare" method="post" >
+          <p><b>Face Comparison</b></p>  
+          <div>Amazon S3 Bucket Name</div>
+          <input type="text" id="bucketname" name="bucketname"/>
+          <div>Face One</div>  
+          <input type="text" id="faceone" name="faceone"/>
+          <br>
+          <div>Face Two</div>  
+          <input type="text" id="facetwo" name="facetwo"/>
+          <br>
+          <button type="submit">Face Comparison</button>
+      </form>
+
+
+    </main>
+
+  </body>
+</html>
